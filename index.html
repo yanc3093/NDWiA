@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next-Day Weather in Australia</title>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <!--Pure-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <!--CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="page">
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h1>
+                    Next-Day Weather in Australia
+                </h1>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h3>
+                    About this project
+                </h3>
+                <p>
+                    This project was an individual school assignment completed in April 2022.
+                </p>
+                <p>
+                    I was provided with a dataset containing about 10 years of daily weather observations from many locations 
+                    across Australia. The objective of this project was to build different classification models that could 
+                    predict whether tomorrow would be warmer than today or not.
+                </p>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h3>
+                    Project outcomes
+                </h3>
+                <p>
+                    As usual, I started the project with data exploration and preprocessing.
+                </p>
+                <p>
+                    After that, I built 6 different classification models using the respective functions provided by the R libraries:
+                </p>
+                <ul>
+                    <li>
+                        Decision Tree: "tree"
+                    </li>
+                    <li>
+                        Naive Bayes: "e1071"
+                    </li>
+                    <li>
+                        Bagging and Boosting: "adabag"
+                    </li>
+                    <li>
+                        Random Forest: "randomForest"
+                    </li>
+                    <li>
+                        Artificial Neural Network: "neuralnet"
+                    </li>
+                </ul>
+                <p>
+                    To measure the models' performance, I computed the prediction accuracy as well as the Area Under the Curve 
+                    (AUC). Below is a screenshot of the result.
+                </p>
+                <div class="image">
+                    <img src="images/1.png" alt="Result 1">
+                </div>
+                <p>
+                    Besides, I also plotted the Receiver Operating Characteristic (ROC) curve for each classification model.
+                </p>
+                <div class="image">
+                    <img src="images/2.png" alt="Result 2">
+                </div>
+                <p>
+                    Based on the observations above, I finally concluded that the Artificial Neural Network is the "best" 
+                    classifier among all the models for this use case.
+                </p>
+                <p>
+                    Below is a snippet of my codework, which was written using the R programming language.
+                </p>
+                <div class="image">
+                    <img src="images/3.png" alt="Codework">
+                </div>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h3>
+                    Summary
+                </h3>
+                <ul>
+                    <li>
+                        Programming language: R
+                    </li>
+                    <li>
+                        Scope: Decision Tree, Naive Bayes, Bagging, Boosting, Random Forest, Artificial Neural Network
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
